@@ -1,0 +1,623 @@
+/* =========================================================
+   PARKSMART - PROFESSIONAL BEIGE THEME
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #3f3529;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(255, 255, 255, 0.75),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(226, 213, 190, 0.55),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 20% 90%,
+            rgba(238, 226, 204, 0.65),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #f3eadb,
+            #eee2cf,
+            #f7efe3
+        );
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+    background:
+        linear-gradient(
+            135deg,
+            #29251f,
+            #51483b,
+            #6b5d4d
+        );
+
+    color: white;
+    padding: 32px 25px;
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(80, 65, 45, 0.22);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    margin: 9px 0 0;
+    color: #e9dfd2;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.container {
+    width: 92%;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+
+/* =========================================================
+   PROFESSIONAL CARDS
+   ========================================================= */
+
+.card {
+    padding: 28px;
+    margin-bottom: 25px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(120, 100, 75, 0.13);
+
+    box-shadow:
+        0 10px 30px rgba(80, 65, 45, 0.10),
+        0 2px 8px rgba(80, 65, 45, 0.05);
+
+    backdrop-filter: blur(8px);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 35px rgba(80, 65, 45, 0.14);
+}
+
+
+/* =========================================================
+   PARKING DASHBOARD
+   ========================================================= */
+
+.card:nth-child(1) {
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf2,
+            #f5ead9
+        );
+
+    border-left: 5px solid #9a7b52;
+}
+
+
+/* =========================================================
+   PARKING SLOTS
+   ========================================================= */
+
+.card:nth-child(2) {
+    background:
+        linear-gradient(
+            135deg,
+            #fffdf8,
+            #f3eadc
+        );
+
+    border-left: 5px solid #6f8f72;
+}
+
+
+/* =========================================================
+   RESERVE YOUR PARKING
+   ========================================================= */
+
+.card:nth-child(3) {
+    background:
+        linear-gradient(
+            135deg,
+            #fdf8ef,
+            #eee1cf
+        );
+
+    border-left: 5px solid #8b6f47;
+}
+
+
+/* =========================================================
+   PARKING SESSION
+   ========================================================= */
+
+.card:nth-child(4) {
+    background:
+        linear-gradient(
+            135deg,
+            #f8f5ef,
+            #e9dfd0
+        );
+
+    border-left: 5px solid #667085;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    color: #3f3529;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* Decorative line below headings */
+
+.card h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    margin-top: 9px;
+
+    border-radius: 5px;
+
+    background: #9a7b52;
+}
+
+
+/* Different accent lines */
+
+.card:nth-child(2) h2::after {
+    background: #6f8f72;
+}
+
+.card:nth-child(3) h2::after {
+    background: #8b6f47;
+}
+
+.card:nth-child(4) h2::after {
+    background: #667085;
+}
+
+
+/* =========================================================
+   PARKING DASHBOARD STATISTICS
+   ========================================================= */
+
+.card:first-child p {
+    display: inline-block;
+
+    width: 30%;
+    min-width: 200px;
+
+    margin: 8px 1%;
+    padding: 20px;
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.68);
+
+    border: 1px solid rgba(120, 100, 75, 0.12);
+
+    box-shadow:
+        0 4px 12px rgba(80, 65, 45, 0.05);
+
+    font-size: 15px;
+}
+
+
+/* Total Slots */
+
+.card:first-child p:nth-child(2) {
+    border-top: 3px solid #9a7b52;
+}
+
+
+/* Available Slots */
+
+.card:first-child p:nth-child(3) {
+    background: #edf6ee;
+    border-top: 3px solid #6f9b73;
+}
+
+
+/* Occupied Slots */
+
+.card:first-child p:nth-child(4) {
+    background: #faf0ed;
+    border-top: 3px solid #b8796d;
+}
+
+
+.card:first-child strong {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 30px;
+
+    color: #4b4034;
+}
+
+
+/* =========================================================
+   PARKING SLOTS
+   ========================================================= */
+
+.slots {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* Individual Slot */
+
+.slot {
+    min-height: 145px;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.slot:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(80, 65, 45, 0.14);
+}
+
+
+.slot h3 {
+    margin: 0 0 10px;
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+
+.slot p {
+    margin: 0;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   AVAILABLE SLOT
+   ========================================================= */
+
+.available {
+    background:
+        linear-gradient(
+            135deg,
+            #ecfdf5,
+            #d9f0dc
+        );
+
+    color: #3f7650;
+
+    border: 1px solid #9cc8a4;
+
+    box-shadow:
+        inset 0 0 20px rgba(16, 185, 129, 0.04);
+}
+
+
+/* =========================================================
+   OCCUPIED SLOT
+   ========================================================= */
+
+.occupied {
+    background:
+        linear-gradient(
+            135deg,
+            #fff3f0,
+            #f5dfdb
+        );
+
+    color: #a65f55;
+
+    border: 1px solid #dfaaa2;
+
+    box-shadow:
+        inset 0 0 20px rgba(180, 80, 70, 0.04);
+}
+
+
+/* =========================================================
+   FORM LABELS
+   ========================================================= */
+
+label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #554a3e;
+}
+
+
+/* =========================================================
+   INPUTS & SELECT
+   ========================================================= */
+
+input,
+select {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border-radius: 10px;
+
+    border: 1px solid #d2c4b1;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    color: #3f3529;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+input:hover,
+select:hover {
+    background: #ffffff;
+
+    border-color: #b7a58e;
+}
+
+
+input:focus,
+select:focus {
+    background: #ffffff;
+
+    border-color: #9a7b52;
+
+    box-shadow:
+        0 0 0 3px rgba(154, 123, 82, 0.13);
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+button {
+    margin-top: 18px;
+
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4267a8,
+            #31548f
+        );
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 14px rgba(49, 84, 143, 0.22);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+button:hover {
+    transform: translateY(-2px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #365b99,
+            #284878
+        );
+
+    box-shadow:
+        0 8px 18px rgba(49, 84, 143, 0.28);
+}
+
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   SUCCESS / ERROR MESSAGES
+   ========================================================= */
+
+#bookingMessage,
+#checkMessage {
+    margin-top: 15px;
+
+    padding: 11px 14px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #5a4b3b;
+
+    background: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================================
+   DATETIME INPUT
+   ========================================================= */
+
+input[type="datetime-local"] {
+    color: #4a4035;
+}
+
+
+/* =========================================================
+   NUMBER INPUT
+   ========================================================= */
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .slots {
+        grid-template-columns: 1fr;
+    }
+
+    .card:first-child p {
+        width: 100%;
+
+        margin: 7px 0;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 94%;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .card {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .slot {
+        min-height: 125px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
